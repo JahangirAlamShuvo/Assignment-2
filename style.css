@@ -1,0 +1,311 @@
+body{
+    background-color: rgba(255, 251, 247, 0.582);
+    margin: 0;
+}
+.body-margin{
+    margin: 5%;
+}
+
+/* header section introduction part start */
+header{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 50px;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0%;
+}
+.nav{
+    width:45%;
+}
+.navbar2nd{
+    display: none;
+}
+
+.nav-bar{
+    text-decoration: none;
+    margin-left: 5%;
+    color: black;
+    font-size: 20px;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.first-scroll-sectoion{
+    margin-top: 5%;
+}
+
+
+
+.first-scroll{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #e02c6e;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    color: white;
+    
+    
+}
+
+
+.logo-section{
+    
+    border-top: solid rgba(114, 114, 114, 0.267) ;
+    border-bottom:solid rgba(114, 114, 114, 0.267) ;
+    
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
+}
+.logo-image{
+
+    margin: 2%;
+    
+}
+
+/* header section introduction part end */
+
+
+.details{
+    font-size: 40px;
+}
+
+.main-camera:hover .camera-image{
+    transform: rotate(30deg) scale(1.1);
+    transition: 1s;
+}
+
+    /* 2nd section start */
+
+.product-caption{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 30px;
+}
+.colourfull-star{
+    color: rgb(255, 166, 0);
+}
+
+
+/* popular collection section using grid */
+
+.product-section{
+    margin: 10% 0%;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+   
+    
+    
+    
+}
+.single-article{
+    box-shadow:0px 0px 5px 0px darkgrey;
+    
+    border-radius: 1%;
+    padding: 5%;
+   
+    
+    
+}
+.product-image{
+    width: 100%;
+}
+.second-scroll{
+    
+        text-decoration: none;
+        font-size: 20px;
+        color: #f8075f;
+        border-radius: 20px;
+        text-align: right;
+    
+}
+
+.second-scroll-div{
+    text-align: right;
+    margin-bottom: 0%;
+    
+
+}
+
+/* 2nd section end */
+
+
+/* Third section */
+.product-caption1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 30px;
+}
+
+.container{
+    width: 90%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px 0px rgb(97, 74, 74);
+    transition: .5s;
+    
+}
+.box-image{
+    display: block;
+    width: 250px;
+    border-radius: 10px;
+
+}
+.box:hover{
+    transform: scale(1.12);
+    z-index: 5;
+}
+.image-background{
+    background-color: rgba(194, 194, 195, 0.349);
+     
+}
+
+.third-scroll a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #f8075f;
+    padding: 1% 2%;
+}
+
+
+        /* third section end */
+
+
+        /* footer section start */
+
+footer{
+    height: 200px;
+    background-color: rgba(20, 2, 37, 0.993);
+    margin: 0px;
+    text-align: center;
+}
+.footer-text{
+    padding-top: 1%;
+}
+.footer-head{
+    color: white;
+}
+.footer-paragraph{
+    color: rgb(248, 245, 245);
+    
+}
+.footer-icon{
+    color: rgb(221, 219, 219);
+    
+    
+}
+/* footer section end */
+
+
+
+
+@media screen and (max-width:411px) {
+
+    .nav{
+        display: none;
+    }
+    .navbar2nd{
+
+        display: inline-block;
+        font-size: .6em;
+    }
+    .website-name{
+        font-size: .5em;
+    }
+    /* --------nav-bar------- */
+
+    .first-section{
+
+        flex-direction: column-reverse;
+    }
+    .camera-image{
+        width: 70%;
+
+    }
+   
+
+    /* ---------first sectrion---- */
+
+    .logo-section{
+        flex: none;
+        display: inline-block;
+        border: none;
+        text-align: center;
+        margin: 8% 0%;
+
+    }
+.logo-image{
+
+    width: 20%;
+}
+
+/* -------logo-------- */
+
+.articles{
+
+    grid-template-columns: repeat(1,1fr);
+}
+.second-scroll-div{
+    margin-top: 750px;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.third-section{
+    text-align: center;
+}
+.body-margin{
+
+    margin:10%;
+}
+    
+}
+
+
+@media screen  and (min-width:412px) and (max-width:1024px){
+
+    
+    .nav{
+        display: none;
+    }
+    .navbar2nd{
+
+        display: inline-block;
+        font-size: .6em;
+    }
+    .website-name{
+        font-size: .5em;
+    }
+
+    .articles{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .second-scroll-div{
+        margin-top: 350px;
+    }
+
+    
+}
